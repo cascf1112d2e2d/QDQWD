@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloading AR File...</title>
+    <meta http-equiv="refresh" content="0;url=https://github.com/cascf1112d2e2d/asdsd/releases/download/v1.0.0/Radonix_Lego.3.usdz">
+    <script>
+        // Auto-trigger the download when the page loads
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = "https://github.com/cascf1112d2e2d/asdsd/releases/download/v1.0.0/Radonix_Lego.3.usdz";
+            link.download = "Radonix_Lego.3.usdz";  // Sets the filename for download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body style="margin: 0px; overflow: scroll;">
+    <a-scene embedded arjs>
+        <a-box position="0 0.5 0" material="opacity: 0.5;"></a-box>
+        <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
+</body>
+</html>
